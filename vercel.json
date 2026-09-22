@@ -1,22 +1,13 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "public",
-  "functions": {
-    "api/index.ts": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/index.ts"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
-  ],
+  "installCommand": "npm install",
+  "framework": null,
   "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/index.ts"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"

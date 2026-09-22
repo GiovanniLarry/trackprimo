@@ -5,3 +5,7 @@ dist
 *.log
 .DS_Store
 server
+shared
+api_backup
+drizzle.config.ts
+tsconfig.json

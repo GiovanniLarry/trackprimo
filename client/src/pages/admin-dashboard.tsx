@@ -12,10 +12,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { insertPackageSchema } from "@shared/schema";
+import { insertPackageSchema } from "@/schema";
 import { apiRequest, queryClient } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
-import type { Package as PackageType, Message as MessageType } from "@shared/schema";
+import type { Package as PackageType, Message as MessageType } from "@/types";
 import { z } from "zod";
 
 const packageFormSchema = insertPackageSchema.extend({

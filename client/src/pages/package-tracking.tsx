@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useQuery } from "@tanstack/react-query";
-import type { Package as PackageType } from "@shared/schema";
+import type { Package as PackageType } from "@/types";
 
 export default function PackageTrackingPage() {
   const [packageId, setPackageId] = useState("");

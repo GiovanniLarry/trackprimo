@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import WhatsAppButton from "@/components/whatsapp-button";
-import type { Package as PackageType } from "@shared/schema";
+import type { Package as PackageType } from "@/types";
 
 export default function Home() {
   const [packageId, setPackageId] = useState("");
